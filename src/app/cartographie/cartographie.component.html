@@ -1,0 +1,60 @@
+<div class="cartographie-container">
+  <h1 class="title">Gestion de Cartographie</h1>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Actions
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item"  (click)="navigateToAjoutForm()">Ajouter</a></li>
+      <li><a class="dropdown-item"  (click)="navigateToUpdateForm()">Modifier</a></li>
+      <li><a class="dropdown-item"  (click)="navigateToDeleteForm()">Supprimer</a></li>
+      <li><a class="dropdown-item"  (click)="navigateToImportForm()">Importer</a></li>
+      <li><a class="dropdown-item"  (click)="navigateToExportForm()">Exporter</a></li>
+      <li><hr class="dropdown-divider"></li>
+    </ul>
+  </div>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Entrer le code de cartographie" aria-label="search">
+        <button class="btn btn-outline-success" type="submit">Rechercher</button>
+      </form>
+    </div>
+  </nav>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Apporteur</th>
+        <th>Nom_Apport</th>
+        <th>Code_Groupe</th>
+        <th>Groupe</th>
+        <th>Code_Réseau</th>
+        <th>Réseau</th>
+        <th>Code_Attache</th>
+        <th>Attachement</th>
+        <th>Code_Marché</th>
+        <th>Marché</th>
+        <th>Code_Canal</th>
+        <th>Canal</th>
+        <th>Catégorie</th>
+        <th>Obj_2024</th>
+        <th>TPE</th>
+        <th>CBI</th>
+        <th>Nouveaux</th>
+        <th>BTP</th>
+        <th>Obj_2023</th>
+        <th>Commerciaux</th>
+        <th>Dir</th>
+        <th>Com</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be inserted dynamically here -->
+    </tbody>
+  </table>
+</div>

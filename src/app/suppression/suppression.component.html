@@ -1,0 +1,28 @@
+<div class="suppression-container">
+
+  <!-- Bouton de Retour -->
+  <button class="back-button" (click)="navigateToCartographie()">Retour</button>
+  <h1 class="form-title">Suppression de Cartographie</h1>
+
+  <div class="navbar">
+    <input type="text" placeholder="Entrer le code de cartographie" [(ngModel)]="searchCode" />
+    <button class="search-button" (click)="openConfirmationPopup()">Rechercher</button>
+  </div>
+
+  <!-- Popup de Confirmation -->
+  <div class="popup" *ngIf="showConfirmationPopup">
+    <div class="popup-content">
+      <p>Voulez-vous vraiment supprimer cette cartographie ?</p>
+      <button class="popup-button" (click)="confirmDeletion()">Oui</button>
+      <button class="popup-button" (click)="cancelDeletion()">Non</button>
+    </div>
+  </div>
+
+  <!-- Popup de Message de Statut -->
+  <div class="popup" *ngIf="showStatusPopup">
+    <div class="popup-content">
+      <p>{{ statusMessage }}</p>
+      <button class="popup-button" (click)="closeStatusPopup()">OK</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,148 @@
+<div class="formulaire-modification-container">
+  <button class="back-button" (click)="navigateToCartographie()">Retour</button>
+    <h1 class="form-title">Formulaire de modification</h1>
+ 
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="entrer le code de cartographie" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </nav>
+
+      <form>
+        <div class="form-group">
+          <label for="code">Code :</label>
+          <input type="text" id="code" name="code" maxlength="10" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="apporteur">Apporteur :</label>
+          <input type="text" id="apporteur" name="apporteur" maxlength="10" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="nomApport">Nom_Apport :</label>
+          <input type="text" id="nomApport" name="nomApport" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="codeGroupe">Code_Groupe :</label>
+          <input type="text" id="codeGroupe" name="codeGroupe" maxlength="10" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="groupe">Groupe :</label>
+          <input type="number" id="groupe" name="groupe" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="codeReseau">Code_Réseau :</label>
+          <input type="number" id="codeReseau" name="codeReseau" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="reseau">Réseau :</label>
+          <input type="text" id="reseau" name="reseau" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="codeAttache">Code_Attache :</label>
+          <input type="number" id="codeAttache" name="codeAttache" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="attachement">Attachement :</label>
+          <input type="text" id="attachement" name="attachement" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="codeMarche">Code_Marché :</label>
+          <input type="number" id="codeMarche" name="codeMarche" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="marche">Marché :</label>
+          <input type="text" id="marche" name="marche" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="codeCanal">Code_Canal :</label>
+          <input type="number" id="codeCanal" name="codeCanal" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="canal">Canal :</label>
+          <input type="text" id="canal" name="canal" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="categorie">Catégorie :</label>
+          <input type="text" id="categorie" name="categorie" maxlength="10" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="obj2024">Obj_2024 :</label>
+          <input type="number" id="obj2024" name="obj2024" step="0.01" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="tpe">TPE :</label>
+          <input type="number" id="tpe" name="tpe" step="0.01" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="cbi">CBI :</label>
+          <input type="number" id="cbi" name="cbi" step="0.01" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="nouveaux">Nouveaux :</label>
+          <input type="number" id="nouveaux" name="nouveaux" step="0.01" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="btp">BTP :</label>
+          <input type="number" id="btp" name="btp" step="0.01" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="obj2023">Obj_2023 :</label>
+          <input type="number" id="obj2023" name="obj2023" step="0.01" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="commerciaux">Commerciaux :</label>
+          <input type="text" id="commerciaux" name="commerciaux" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="dir">Dir :</label>
+          <input type="text" id="dir" name="dir" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="com">Com :</label>
+          <input type="text" id="com" name="com" maxlength="255" class="form-control">
+        </div>
+    
+        <div class="form-group">
+          <label for="statut">Statut :</label>
+          <input type="text" id="statut" name="statut" maxlength="50" class="form-control">
+        </div>
+
+        <!-- Bouton d'enregistrement -->
+        <button type="button" (click)="saveData()">Enregistrer</button>
+        <!-- Popup de succès -->
+<div *ngIf="isSaved" class="popup">
+  <div class="popup-content">
+    <p>Enregistrer avec succès!</p>
+    <button (click)="closePopup()">OK</button>
+  </div>
+</div>
+   
+
+
+

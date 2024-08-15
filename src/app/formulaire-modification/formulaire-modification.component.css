@@ -1,0 +1,111 @@
+/* Conteneur de la navbar et du bouton de fermeture */
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Sépare la navbar à gauche et le bouton à droite */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    padding: 10px; /* Espace autour des éléments */
+}
+
+/* Style pour la navbar */
+.navbar {
+    flex-grow: 1; /* Permet à la navbar de prendre l'espace disponible */
+    /* Style pour le bouton de fermeture */
+.btn-close {
+    background-color: rgb(244, 7, 7); /* Fond rouge pour le bouton */
+    border: none; /* Supprime les bordures */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 20px; /* Taille de la croix */
+    color: black; /* Couleur noire pour la croix */
+    padding: 5px; /* Ajuste l'espace intérieur du bouton */
+    position: absolute; /* Position absolue pour le placer à droite */
+    top: -4%; /* Distance du haut */
+    right: 10px; /* Distance de la droite */
+    /* Optionnel: Style du bouton lors du survol */
+.btn-close:hover {
+    background-color: darkred; /* Change la couleur de fond au survol si désiré */
+}
+}
+}
+
+/* Style de base pour le formulaire */
+.form-title {
+    text-align: center; /* Centre le titre du formulaire */
+    margin-top: 20px; /* Espace au-dessus du titre */
+    font-weight: bold; 
+}
+
+/* Styles pour le popup de succès */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centre le bouton */
+}
+
+/* Style pour le bouton 'Enregistrer' */
+button[type="button"] {
+    background-color: green; /* Vert pour le bouton */
+    color: white; /* Texte en blanc */
+    padding: 10px 30px; /* Rend le bouton plus long */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto; /* Centre le bouton */
+    display: block;
+}
+
+button[type="button"]:hover {
+    background-color: rgb(12, 78, 12); /* Change de couleur au survol */
+}
+
+  /* Style pour le bouton de retour */
+  .back-button {
+    background-color: #2196F3; /* Bleu */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute; /* Positionnez-le selon vos besoins */
+    top: 10px;
+    left: 10px;
+  }
+  
+  .back-button:focus {
+    outline: none; /* Enlève le contour lors du focus */
+  }
+  
+  .back-button::before {
+    content: '\2190'; /* Code Unicode pour la flèche vers la gauche */
+    font-size: 18px;
+    margin-right: 8px;
+  }
